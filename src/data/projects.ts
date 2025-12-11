@@ -15,7 +15,7 @@ export const projects: Project[] = [
       "Juego educativo tipo Monopoly para practicar derivadas con tarjetas y tablero 3D. Animaciones, KaTeX y multijugador local.",
     tech: ["React", "Vite", "Tailwind", "React Three Fiber", "KaTeX"],
     links: [
-      { label: "Código", href: "https://github.com/TU_USUARIO/TU_REPO/tree/main/monopoly-derivadas" },
+      { label: "Código", href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/monopoly-derivadas" },
     ],
   },
   {
@@ -23,9 +23,7 @@ export const projects: Project[] = [
     description:
       "API minimalista en .NET para experimentos (endpoints y prueba de conceptos).",
     tech: [".NET", "C#", "Minimal APIs"],
-    links: [
-      { label: "Código", href: "https://github.com/TU_USUARIO/TU_REPO/tree/main/calculoapis" }
-    ],
+    // Enlace pendiente hasta publicar el código del backend en GitHub
   },
   {
     slug: "drone-agricola",
@@ -34,7 +32,7 @@ export const projects: Project[] = [
       "Interfaz con componentes UI modernos, visualizaciones y secciones interactivas para un concepto de dron agrícola.",
     tech: ["React", "Vite", "Tailwind"],
     links: [
-      { label: "Código", href: "https://github.com/TU_USUARIO/TU_REPO/tree/main/drone-agricola" },
+      { label: "Código", href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/drone-agricola" },
     ],
   },
   {
@@ -44,7 +42,7 @@ export const projects: Project[] = [
       "Portafolio temático de dron submarino con secciones técnicas y componentes UI personalizados.",
     tech: ["React", "Vite", "Tailwind"],
     links: [
-      { label: "Código", href: "https://github.com/TU_USUARIO/TU_REPO/tree/main/drone-submarino" },
+      { label: "Código", href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/drone-submarino" },
     ],
   },
   // Eliminado: "CalculoProyecto - Copia"
