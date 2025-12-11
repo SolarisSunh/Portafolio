@@ -34,7 +34,6 @@ const projects = [
   { name: "monopoly-derivadas", rel: "monopoly-derivadas" },
   { name: "drone-agricola", rel: "drone-agricola" },
   { name: "drone-submarino", rel: "drone-submarino" },
-  { name: "calculo-proyecto-copia", rel: "CalculoProyecto - Copia" },
 ].map(p => ({ name: p.name, externalCandidates: candidateRoots.map(r => resolve(r, p.rel)) }));
 
 function sh(cmd, cwd) {

@@ -47,16 +47,7 @@ export const projects: Project[] = [
       { label: "Código", href: "https://github.com/TU_USUARIO/TU_REPO/tree/main/drone-submarino" },
     ],
   },
-  {
-    slug: "calculo-proyecto-copia",
-    title: "CalculoProyecto - Copia (Demo UI)",
-    description:
-      "Muestra integrada del proyecto 'CalculoProyecto - Copia'. Vista previa servida desde la misma carpeta del Portafolio.",
-    tech: ["HTML", "CSS", "JS"],
-    links: [
-      { label: "Código", href: "https://github.com/TU_USUARIO/TU_REPO/tree/main/CalculoProyecto%20-%20Copia" },
-    ],
-  },
+  // Eliminado: "CalculoProyecto - Copia"
 ];
 
 
