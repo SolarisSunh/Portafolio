@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Paleta inspirada en agricultura y tecnología */
+  /* Variables para gradiente de fondo personalizable */
+  --bg-from: #0b0b14;
+  --bg-via: #1a1027;
+  --bg-to: #3b0764; /* morado aesthetic por defecto */
+
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 160 84% 39%; /* verde-teal */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 201 94% 87%; /* cian suave */
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --primary: 160 84% 39%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 201 94% 87%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 215 20.2% 65.1%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    min-width: 320px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Fondo global controlado por variables */
+.app-gradient {
+  /* Soporta ángulo configurable */
+  --bg-angle: 180deg;
+  background-image: linear-gradient(var(--bg-angle), var(--bg-from), var(--bg-via), var(--bg-to));
+  background-attachment: fixed;
+}
