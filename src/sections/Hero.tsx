@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
             Este portafolio reúne mis mejores proyectos.
           </p>
           <div className="mt-6 flex gap-3">
-            <Button onClick={() => window.open('#', '_blank')}>Visitar CV</Button>
+            <Button onClick={() => window.open('https://github.com/SolarisSunh/Portafolio', '_blank')}>Visitar CV</Button>
             <Button variant="secondary" onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}>
               Contactar
             </Button>
