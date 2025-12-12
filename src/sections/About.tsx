@@ -12,11 +12,9 @@ export const About: React.FC = () => {
           </CardHeader>
           <CardContent>
             <p>
-              Soy un profesional orientado a resultados, con enfoque en diseño de
-              interfaces y experiencia de usuario. Me entusiasma construir
-              aplicaciones con un equilibrio entre estética, rendimiento y
-              mantenibilidad. Disfruto colaborar, iterar rápido y dejar el código
-              mejor de como lo encontré.
+              Soy un estudiante de la Preparatoria Royal y aspirante a entrar a la Universidad Tecnologico de Monterrey (ITESM) en la carrera de Ingenieria en Ciencias de datos.
+              Me gusta la tecnologia y la programacion, por ahora estoy orientado a resultados, con enfoque en diseño de interfaces y experiencia de un usuario.
+              Por ahora mis proyectos han sido meramente escolares, pero con la integracion de paginas Web. Disfruto colaborar y mejorar mis habilidades.
             </p>
           </CardContent>
         </Card>

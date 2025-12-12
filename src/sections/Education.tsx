@@ -8,11 +8,11 @@ export const Education: React.FC = () => {
         <h2 className="text-2xl font-bold text-white mb-6">Educación</h2>
         <Card>
           <CardHeader>
-            <CardTitle>Tecnológico de Monterrey (ITESM)</CardTitle>
+            <CardTitle>Preparatoria Royal y Tecnológico de Monterrey (ITESM)</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-white/80">
-              Mi objetivo es continuar mi formación en el <strong>Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)</strong>,
+              Por ahora soy Estudiante de la Preparatoria Royal pero mi objetivo es continuar mi formación en el <strong>Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)</strong>,
               una de las universidades más reconocidas de América Latina por su enfoque en innovación, liderazgo y emprendimiento.
             </p>
           </CardContent>
