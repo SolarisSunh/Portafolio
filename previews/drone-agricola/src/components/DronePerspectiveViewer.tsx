@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState, type ReactElement } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactElement } from "react";
 import { Card } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +17,8 @@ export default function DronePerspectiveViewer(): ReactElement {
   // Estado STL
   const [geometry, setGeometry] = useState<THREE.BufferGeometry | null>(null);
   const [stlScale, setStlScale] = useState<number>(1);
+  const [availableModels, setAvailableModels] = useState<{ label: string; file: string }[]>([]);
+  const [selectedModel, setSelectedModel] = useState<string>("");
   const dragRef = useRef<{ dragging: boolean; x: number; y: number }>({
     dragging: false,
     x: 0,
@@ -66,6 +68,43 @@ export default function DronePerspectiveViewer(): ReactElement {
       setStlScale(1);
     }
     setGeometry(parsed);
+  }, []);
+
+  const loadFromUrl = useCallback(async (url: string) => {
+    if (!url) return;
+    const res = await fetch(url);
+    if (!res.ok) return;
+    const buffer = await res.arrayBuffer();
+    const loader = new STLLoader();
+    const parsed = loader.parse(buffer as ArrayBuffer);
+    parsed.computeBoundingBox();
+    parsed.computeVertexNormals();
+    const bbox = parsed.boundingBox;
+    if (bbox) {
+      const size = new THREE.Vector3();
+      bbox.getSize(size);
+      const maxDim = Math.max(size.x, size.y, size.z);
+      const target = 2.0;
+      const s = maxDim > 0 ? target / maxDim : 1;
+      setStlScale(s);
+    } else {
+      setStlScale(1);
+    }
+    setGeometry(parsed);
+  }, []);
+
+  // Cargar listado de modelos estáticos desde /models/models.json
+  useEffect(() => {
+    const base = (import.meta as any).env?.BASE_URL || "/";
+    fetch(`${base}models/models.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (data?.models?.length) {
+          setAvailableModels(data.models);
+          setSelectedModel(data.models[0]?.file || "");
+        }
+      })
+      .catch(() => void 0);
   }, []);
 
   const meshRotation = useMemo<[number, number, number]>(() => {
@@ -150,6 +189,28 @@ export default function DronePerspectiveViewer(): ReactElement {
               <div className="space-y-2">
                 <div className="text-sm text-slate-600">Cargar STL del dron</div>
                 <Input type="file" accept=".stl" onChange={handleFile} />
+                {availableModels.length > 0 && (
+                  <div className="flex items-center gap-2">
+                    <select
+                      className="border rounded px-2 py-1 text-sm"
+                      value={selectedModel}
+                      onChange={(e) => setSelectedModel(e.target.value)}
+                    >
+                      {availableModels.map((m) => (
+                        <option key={m.file} value={m.file}>{m.label}</option>
+                      ))}
+                    </select>
+                    <Button
+                      variant="secondary"
+                      onClick={() => {
+                        const base = (import.meta as any).env?.BASE_URL || "/";
+                        if (selectedModel) loadFromUrl(`${base}models/${selectedModel}`);
+                      }}
+                    >
+                      Cargar ejemplo
+                    </Button>
+                  </div>
+                )}
               </div>
               <div>
                 <div className="mb-2 text-sm text-slate-600">Rotación horizontal</div>
