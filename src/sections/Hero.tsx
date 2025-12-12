@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden pt-28 sm:pt-36 pb-16 sm:pb-24">
+    <section id="inicio" className="relative overflow-hidden pt-28 sm:pt-36 pb-16 sm:pb-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-2xl">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
