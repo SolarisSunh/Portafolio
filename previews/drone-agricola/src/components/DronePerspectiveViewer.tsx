@@ -192,12 +192,12 @@ export default function DronePerspectiveViewer(): ReactElement {
                 {availableModels.length > 0 && (
                   <div className="flex items-center gap-2">
                     <select
-                      className="border rounded px-2 py-1 text-sm"
+                      className="border rounded px-2 py-1 text-sm bg-white text-slate-900"
                       value={selectedModel}
                       onChange={(e) => setSelectedModel(e.target.value)}
                     >
                       {availableModels.map((m) => (
-                        <option key={m.file} value={m.file}>{m.label}</option>
+                        <option key={m.file} value={m.file} className="text-slate-900">{m.label}</option>
                       ))}
                     </select>
                     <Button
