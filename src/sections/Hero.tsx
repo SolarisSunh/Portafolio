@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
             Miguel Chavez
           </h1>
           <p className="mt-2 text-primary-300 font-semibold">
-            Futuro Desarrollador
+            Desarrollador web en formación · IA y Ciencia de Datos
           </p>
           <p className="mt-4 text-white/80">
             Este portafolio reúne mis mejores proyectos.

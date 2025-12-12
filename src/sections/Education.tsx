@@ -13,7 +13,7 @@ export const Education: React.FC = () => {
           <CardContent>
             <p className="text-white/80">
               Por ahora soy Estudiante de la Preparatoria Royal pero mi objetivo es continuar mi formación en el <strong>Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)</strong>,
-              una de las universidades más reconocidas de América Latina por su enfoque en innovación, liderazgo y emprendimiento.
+              una de las universidades más reconocidas de América Latina por su enfoque en innovación, liderazgo y emprendimiento, con intención de cursar la carrera de <strong>Ingeniería en Ciencias de Datos e Inteligencia Artificial</strong>.
             </p>
           </CardContent>
         </Card>

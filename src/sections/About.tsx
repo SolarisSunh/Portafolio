@@ -12,9 +12,9 @@ export const About: React.FC = () => {
           </CardHeader>
           <CardContent>
             <p>
-              Soy un estudiante de la Preparatoria Royal y aspirante a entrar a la Universidad Tecnologico de Monterrey (ITESM) en la carrera de Ingenieria en Ciencias de datos.
-              Me gusta la tecnologia y la programacion, por ahora estoy orientado a resultados, con enfoque en diseño de interfaces y experiencia de un usuario.
-              Por ahora mis proyectos han sido meramente escolares, pero con la integracion de paginas Web. Disfruto colaborar y mejorar mis habilidades.
+              Soy estudiante de la Preparatoria Royal, próximo a egresar, y aspirante a ingresar al Tecnológico de Monterrey (ITESM) en la carrera de Ingeniería en Ciencias de Datos e Inteligencia Artificial.
+              Ya desarrollo páginas web con React, TypeScript y Tailwind, con enfoque en UI/UX y aprendizaje continuo.
+              Mis proyectos son principalmente escolares y personales (incluyendo 3D con React Three Fiber y SPAs). Disfruto colaborar y mejorar mis habilidades. Nivel de inglés: B2.
             </p>
           </CardContent>
         </Card>
