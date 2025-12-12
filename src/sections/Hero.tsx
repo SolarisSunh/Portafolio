@@ -16,7 +16,10 @@ export const Hero: React.FC = () => {
             Este portafolio reúne mis mejores proyectos.
           </p>
           <div className="mt-6 flex gap-3">
-            <Button onClick={() => window.open('/CV.pdf', '_blank')}>Visitar CV</Button>
+            <Button onClick={() => {
+              const base = (import.meta as any).env?.BASE_URL || '/';
+              window.open(`${base}CV.pdf`, '_blank');
+            }}>Visitar CV</Button>
             <Button variant="secondary" onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}>
               Contactar
             </Button>
