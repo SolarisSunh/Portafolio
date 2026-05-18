@@ -7,12 +7,14 @@ export const Navbar: React.FC = () => {
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <div className="text-white font-bold tracking-wide">Mi Portafolio</div>
         <nav className="hidden sm:flex items-center gap-4 text-sm">
-          {["Sobre mí", "Proyectos", "Habilidades", "Educación", "Contacto"].map((item) => {
+          {["Sobre mí", "Proyectos", "IAI", "Habilidades", "Educación", "Contacto"].map((item) => {
             const href =
               item === "Sobre mí"
                 ? "#inicio"
                 : item === "Educación"
                 ? "#educacion"
+                : item === "IAI"
+                ? "#iai"
                 : `#${item.replace(/\s+/g, "").toLowerCase()}`;
             return (
               <a key={item} href={href} className="text-white/80 hover:text-white transition">

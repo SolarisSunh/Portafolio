@@ -1,11 +1,14 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import { iaiProjects } from "../data/iai-projects";
 import { Button } from "../components/ui/button";
 
 export const ProjectPreview: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const project = projects.find((p) => p.slug === slug);
+  const project =
+    projects.find((p) => p.slug === slug) ??
+    iaiProjects.find((p) => p.slug === slug);
 
   if (!project) {
     return (

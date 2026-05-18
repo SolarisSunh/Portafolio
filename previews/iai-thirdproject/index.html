@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX/UI Report — Kronos</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 12pt;
+      line-height: 1.6;
+      color: #222;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    h1 { font-size: 1.35rem; margin-bottom: 0.25rem; }
+    .meta { font-size: 0.95rem; color: #555; margin-bottom: 1.5rem; }
+    h2 { font-size: 1.05rem; margin-top: 1.25rem; }
+    p { text-align: justify; margin: 0.6rem 0; }
+    a { color: #1a5276; }
+    @media print { body { margin: 1in; } }
+  </style>
+</head>
+<body>
+  <h1>UX/UI and Accessibility Evaluation: Kronos</h1>
+  <p class="meta">
+    Website analyzed:
+    <a href="https://solarissunh.github.io/kronos/">https://solarissunh.github.io/kronos/</a><br />
+    Activity: Evaluate a Website's UX/UI Design
+  </p>
+
+  <h2>What works well</h2>
+  <p>
+    Kronos delivers a cohesive visual identity: a dark theme, cyan accents, and readable typography with
+    strong contrast against the background. Primary navigation (Home, Components, Prebuilt PCs, Repair,
+    About, Contact) is clear, repeated in the footer, and includes a mobile hamburger menu with
+    <em>aria-expanded</em> states. Notable accessibility features include a “Skip to content” link, labeled
+    contact form fields, a product filter using <em>role="toolbar"</em>, and form confirmation with
+    <em>aria-live</em>. The responsive layout uses card grids and consistent heading hierarchy throughout.
+  </p>
+
+  <h2>What needs improvement</h2>
+  <p>
+    The site mixes Spanish and English, with unprofessional copy (“Las seccionessssss”, “Componentes
+    generados al azar)”). The “Why choose Kronos” section shows icons but omits explanatory text. Product
+    images use empty <code>alt</code> attributes, which hurts screen reader users. The About page only
+    displays “Out of Service.” An accessibility bug exists where <code>aria-labelledby</code> does not match
+    the category heading <code>id</code>. The Contact page message “Don't call us” discourages users.
+  </p>
+
+  <h2>Suggestions for improvement</h2>
+  <p>
+    Unify the language and revise all copy; complete the About page and “Why choose Kronos” section; add
+    descriptive <code>alt</code> text to images; fix <code>aria-labelledby</code> mismatches; offer a light
+    mode or higher-contrast option; and strengthen focus states on linked cards. These changes would improve
+    usability and WCAG compliance without sacrificing the site's current aesthetic.
+  </p>
+</body>
+</html>

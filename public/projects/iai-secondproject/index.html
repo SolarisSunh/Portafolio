@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello! Welcome to My Personal Page</h1>
+
+        <h2>About Me</h2>
+        <p class="intro">
+            Hi, my name is Miguel. I'm a web development and technology enthusiast.
+            I love learning new things every day.
+            This is a prototype of a personal webpage where you can learn a bit more about my interests and hobbies.
+        </p>
+
+        <h2>My Favorite Hobbies</h2>
+        <ul class="hobbies-list">
+            <li>Programming and web development</li>
+            <li>Reading science fiction books</li>
+            <li>Listening to music</li>
+            <li>Exercising and maintaining a healthy lifestyle</li>
+            <li>Traveling and exploring new places</li>
+        </ul>
+
+        <h2>Something I Like</h2>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+                 alt="Technology and code">
+            <p class="image-caption">I love technology and software development</p>
+        </div>
+
+        <h2>My Favorite Website</h2>
+        <div class="link-container">
+            <a href="https://solarissunh.github.io/Portafolio/" target="_blank" rel="noopener noreferrer">Visit My Portfolio</a>
+        </div>
+
+        <section class="interactive" aria-labelledby="interactive-heading">
+            <h2 id="interactive-heading">Interactive section</h2>
+
+            <div class="interactive-block">
+                <h3>1. Text button</h3>
+                <p id="toggle-text" class="toggle-message">Click the button to change this message.</p>
+                <button type="button" id="toggle-btn" class="btn">Change message</button>
+            </div>
+
+            <div class="interactive-block">
+                <h3>2. Name check</h3>
+                <form id="name-form" class="name-form" novalidate>
+                    <label for="user-name">Enter your name:</label>
+                    <input type="text" id="user-name" name="name" placeholder="Your name" autocomplete="name">
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <p id="name-feedback" class="feedback" role="status" aria-live="polite"></p>
+            </div>
+
+            <div class="interactive-block">
+                <h3>3. Background color</h3>
+                <p class="color-hint">Pick a background color for the page:</p>
+                <div class="color-switcher" role="group" aria-label="Background color options">
+                    <button type="button" class="color-btn" data-color="#e8f4f8" data-label="Light blue" style="--swatch: #e8f4f8">Light blue</button>
+                    <button type="button" class="color-btn" data-color="#fdebd0" data-label="Warm sand" style="--swatch: #fdebd0">Warm sand</button>
+                    <button type="button" class="color-btn" data-color="#d5f5e3" data-label="Mint" style="--swatch: #d5f5e3">Mint</button>
+                    <button type="button" class="color-btn" data-color="#ebdef0" data-label="Lavender" style="--swatch: #ebdef0">Lavender</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

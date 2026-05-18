@@ -105,6 +105,41 @@ for (const p of projects) {
   }
 }
 
+// Proyectos estáticos IAI (HTML/CSS/JS sin build)
+const staticIai = [
+  { name: "iai-secondproject", rel: "IAI/secondproject/thirdproject" },
+  { name: "iai-thirdproject", rel: "IAI/thirdproject", indexFile: "informe-ux-kronos.html" },
+];
+
+for (const p of staticIai) {
+  const external = resolveExternalPath(p.rel);
+  const dest = join(outBase, p.name);
+  const internal = join(previewsBase, p.name);
+
+  if (!existsSync(internal) && existsSync(external)) {
+    mkdirSync(internal, { recursive: true });
+    cpSync(external, internal, { recursive: true });
+    if (p.indexFile && existsSync(join(internal, p.indexFile))) {
+      cpSync(join(internal, p.indexFile), join(internal, "index.html"));
+    }
+    console.log(`Copiado estático IAI → previews/${p.name}`);
+  }
+
+  const source = existsSync(internal) ? internal : external;
+  if (!existsSync(source)) {
+    console.warn(`IAI estático no encontrado: ${p.name} (${source})`);
+    continue;
+  }
+
+  rmSync(dest, { recursive: true, force: true });
+  mkdirSync(dest, { recursive: true });
+  cpSync(source, dest, { recursive: true });
+  if (p.indexFile && existsSync(join(dest, p.indexFile)) && !existsSync(join(dest, "index.html"))) {
+    cpSync(join(dest, p.indexFile), join(dest, "index.html"));
+  }
+  console.log(`Vista previa estática IAI lista: ${dest}`);
+}
+
 console.log("Previews: proceso completado. Salida en /public/projects");
 
 
