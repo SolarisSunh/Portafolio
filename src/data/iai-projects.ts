@@ -33,4 +33,21 @@ export const iaiProjects: IaiProject[] = [
       },
     ],
   },
+  {
+    slug: "iai-wordpress-iai",
+    title: "WordPress Web IAI",
+    description:
+      "The Golden Crumb — fictional cookie shop on WordPress.com with Gutenberg blocks: Home menu, About, Contact form, and site navigation (IAI project).",
+    tech: ["WordPress", "Gutenberg", "HTML", "Jetpack"],
+    links: [
+      {
+        label: "Código",
+        href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-wordpress-iai",
+      },
+      {
+        label: "WordPress",
+        href: "https://miguelalejandrochavez-zcrxp.wordpress.com/",
+      },
+    ],
+  },
 ];

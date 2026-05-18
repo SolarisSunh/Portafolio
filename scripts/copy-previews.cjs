@@ -109,14 +109,15 @@ for (const p of projects) {
 const staticIai = [
   { name: "iai-secondproject", rel: "IAI/secondproject/thirdproject" },
   { name: "iai-thirdproject", rel: "IAI/thirdproject", indexFile: "informe-ux-kronos.html" },
+  { name: "iai-wordpress-iai", rel: "Portafolio/previews/iai-wordpress-iai", internalOnly: true },
 ];
 
 for (const p of staticIai) {
-  const external = resolveExternalPath(p.rel);
+  const external = p.internalOnly ? join(previewsBase, p.name) : resolveExternalPath(p.rel);
   const dest = join(outBase, p.name);
   const internal = join(previewsBase, p.name);
 
-  if (!existsSync(internal) && existsSync(external)) {
+  if (!existsSync(internal) && existsSync(external) && !p.internalOnly) {
     mkdirSync(internal, { recursive: true });
     cpSync(external, internal, { recursive: true });
     if (p.indexFile && existsSync(join(internal, p.indexFile))) {

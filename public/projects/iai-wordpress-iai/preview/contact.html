@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — The Golden Crumb</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <p class="brand">The Golden Crumb</p>
+    <nav class="site-nav" aria-label="Main">
+      <a href="home.html">Home</a>
+      <a href="about.html">About the Project</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Contact us</h1>
+      <p>Have a question about our cookies, a custom dozen for an event, or feedback on this IAI website project? Send us a message.</p>
+    </section>
+
+    <section class="columns two">
+      <div class="section">
+        <h3>Get in touch</h3>
+        <p>Email, call, or visit our bakery window at Dr Mier 1394.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:hello@thegoldencrumb.example">hello@thegoldencrumb.example</a></li>
+          <li><a href="tel:+528100000000">+52 81 0000 0000</a></li>
+          <li>Dr Mier 1394, Monterrey, Nuevo León</li>
+        </ul>
+        <img src="https://miguelalejandrochavez-zcrxp.wordpress.com/wp-content/uploads/2026/05/the-golden-crumb-6a0ab271dc1d5.png" alt="Assorted gourmet cookies" />
+      </div>
+      <div class="form-box">
+        <h3>Send a message</h3>
+        <form onsubmit="event.preventDefault(); alert('Demo form — real form runs on WordPress.com');">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required />
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required />
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><strong>Explore our site</strong> — <a href="home.html">Home</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
