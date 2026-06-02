@@ -10,7 +10,7 @@ export const IAI: React.FC = () => {
       <div className="mx-auto max-w-6xl px-4">
         <h2 className="text-2xl font-bold text-white mb-2">IAI</h2>
         <p className="text-white/70 mb-6 text-sm">
-          Course activities — Informática Aplicada a Internet.
+          Course activities — Estas fueron actividades específicas que me pidieron hacer con el contenido del curso, no están tan ligadas a lo que son los proyectos del portafolio.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
           {iaiProjects.map((p) => (

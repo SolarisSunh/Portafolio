@@ -20,19 +20,20 @@ export const iaiProjects: IaiProject[] = [
       },
     ],
   },
-  {
-    slug: "iai-thirdproject",
-    title: "Kronos UX/UI Report (IAI)",
-    description:
-      "Short UX/UI and accessibility evaluation of the Kronos demo store (design, navigation, and improvement suggestions).",
-    tech: ["HTML", "UX/UI", "Accessibility"],
-    links: [
-      {
-        label: "Código",
-        href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-thirdproject",
-      },
-    ],
-  },
+  // Inactivo: este proyecto (Kronos UX/UI Report) no forma parte de IAI.
+  // {
+  //   slug: "iai-thirdproject",
+  //   title: "Kronos UX/UI Report (IAI)",
+  //   description:
+  //     "Short UX/UI and accessibility evaluation of the Kronos demo store (design, navigation, and improvement suggestions).",
+  //   tech: ["HTML", "UX/UI", "Accessibility"],
+  //   links: [
+  //     {
+  //       label: "Código",
+  //       href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-thirdproject",
+  //     },
+  //   ],
+  // },
   {
     slug: "iai-wordpress-iai",
     title: "WordPress Web IAI",
