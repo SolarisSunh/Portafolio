@@ -70,13 +70,6 @@ Actividades desarrolladas como parte de la Dual Certification del IAI.
     - Interactividad con JavaScript (eventos, validación y manipulación del DOM)
   - Código: [Repositorio (previews/iai-secondproject)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-secondproject)
 
-- Kronos UX/UI Report (IAI)  
-  Evaluación breve de UX/UI y accesibilidad de la tienda demo Kronos (diseño, navegación y sugerencias de mejora).  
-  - Tecnologías: HTML, UX/UI, Accesibilidad  
-  - Aportes:
-    - Análisis de usabilidad, accesibilidad y propuestas de mejora
-  - Código: [Repositorio (previews/iai-thirdproject)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-thirdproject)
-
 ### Educación
 - Preparatoria Royal — Estudiante (en curso)  
   Objetivo académico: estudiar una Ingeniería en Ciencias de Datos.
