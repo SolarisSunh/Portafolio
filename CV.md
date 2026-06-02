@@ -61,7 +61,7 @@ Actividades desarrolladas como parte de la Dual Certification del IAI.
     - Construcción de páginas con bloques de Gutenberg y navegación del sitio
     - Formulario de contacto y estructura de contenido
   - Código: [Repositorio (previews/iai-wordpress-iai)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-wordpress-iai)  
-  - Sitio: [WordPress](https://miguelalejandrochavez-zcrxp.wordpress.com/)
+  - Sitio: WordPress (sin acceso)
 
 - Personal Page — Interactive (IAI)  
   Página personal con JavaScript: botón para alternar texto, validación de nombre en formulario y cambiador de color de fondo.  
