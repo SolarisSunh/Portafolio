@@ -12,9 +12,9 @@ export const About: React.FC = () => {
           </CardHeader>
           <CardContent>
             <p>
-              Soy estudiante de la Preparatoria Royal, próximo a egresar, y aspirante a ingresar al Tecnológico de Monterrey (ITESM) en la carrera de Ingeniería en Ciencias de Datos e Inteligencia Artificial.
+              Soy estudiante de la Preparatoria Royal y del IAI (International American Institute), próximo a egresar, con el objetivo de formar una carrera universitaria cursando una Ingeniería en Ciencias de Datos.
               Ya desarrollo páginas web con React, TypeScript y Tailwind, con enfoque en UI/UX y aprendizaje continuo.
-              Mis proyectos son principalmente escolares y personales (incluyendo 3D con React Three Fiber y SPAs). Disfruto colaborar y mejorar mis habilidades. Nivel de inglés: B2.
+              Mis proyectos son principalmente escolares y personales (incluyendo 3D con React Three Fiber y SPAs). Disfruto colaborar y mejorar mis habilidades. Nivel de inglés: B1.
             </p>
           </CardContent>
         </Card>
