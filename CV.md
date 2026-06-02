@@ -6,12 +6,13 @@ Estudiante de Preparatoria Royal · Desarrollador Frontend Junior
 - GitHub: [SolarisSunh](https://github.com/SolarisSunh)
 
 ### Perfil
-Estudiante de preparatoria, próximo a egresar, con aspiración a ingresar al ITESM en Ingeniería en Ciencias de Datos e Inteligencia Artificial. Desarrollador web en formación: ya construyo páginas web con React, TypeScript y Tailwind, priorizando UI/UX y la creación de interfaces interactivas. He desarrollado un juego educativo con tablero 3D usando React Three Fiber y prototipos temáticos con componentes de interfaz modernos. Enfoque en aprendizaje continuo, colaboración y entrega de resultados claros.
+Estudiante de preparatoria, próximo a egresar, con aspiración a estudiar una Ingeniería en Ciencias de Datos. Desarrollador web en formación: ya construyo páginas web con React, TypeScript y Tailwind, priorizando UI/UX y la creación de interfaces interactivas. He desarrollado un juego educativo con tablero 3D usando React Three Fiber y prototipos temáticos con componentes de interfaz modernos. Enfoque en aprendizaje continuo, colaboración y entrega de resultados claros.
 
 ### Habilidades Técnicas
-- Frontend: React, TypeScript, Vite, Tailwind CSS, UI/UX
+- Frontend: React, TypeScript, JavaScript, Vite, Tailwind CSS, HTML, CSS, UI/UX
 - Visualización/3D: Three.js / React Three Fiber, KaTeX
 - Backend (conceptos): .NET, C#, Minimal APIs
+- CMS: WordPress, Gutenberg, Jetpack
 - Herramientas: Git, GitHub
 
 ### Proyectos Destacados
@@ -50,13 +51,41 @@ Estudiante de preparatoria, próximo a egresar, con aspiración a ingresar al IT
     - Definición de endpoints básicos y estructura inicial de proyecto
     - Comprensión de patrones mínimos para exponer servicios HTTP
 
+### Proyectos IAI (International American Institute)
+Actividades desarrolladas como parte de la Dual Certification del IAI.
+
+- WordPress Web — The Golden Crumb (IAI)  
+  Tienda ficticia de galletas creada en WordPress.com con bloques de Gutenberg: menú de inicio, página About, formulario de contacto y navegación del sitio.  
+  - Tecnologías: WordPress, Gutenberg, HTML, Jetpack  
+  - Aportes:
+    - Construcción de páginas con bloques de Gutenberg y navegación del sitio
+    - Formulario de contacto y estructura de contenido
+  - Código: [Repositorio (previews/iai-wordpress-iai)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-wordpress-iai)  
+  - Sitio: [WordPress](https://miguelalejandrochavez-zcrxp.wordpress.com/)
+
+- Personal Page — Interactive (IAI)  
+  Página personal con JavaScript: botón para alternar texto, validación de nombre en formulario y cambiador de color de fondo.  
+  - Tecnologías: HTML, CSS, JavaScript  
+  - Aportes:
+    - Interactividad con JavaScript (eventos, validación y manipulación del DOM)
+  - Código: [Repositorio (previews/iai-secondproject)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-secondproject)
+
+- Kronos UX/UI Report (IAI)  
+  Evaluación breve de UX/UI y accesibilidad de la tienda demo Kronos (diseño, navegación y sugerencias de mejora).  
+  - Tecnologías: HTML, UX/UI, Accesibilidad  
+  - Aportes:
+    - Análisis de usabilidad, accesibilidad y propuestas de mejora
+  - Código: [Repositorio (previews/iai-thirdproject)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-thirdproject)
+
 ### Educación
 - Preparatoria Royal — Estudiante (en curso)  
-  Objetivo académico: ingresar al Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM), carrera de Ingeniería en Ciencias de Datos e Inteligencia Artificial.
+  Objetivo académico: estudiar una Ingeniería en Ciencias de Datos.
+- Dual Certification — IAI (International American Institute) (en curso)  
+  Programa de certificación dual con enfoque en desarrollo web (WordPress/Gutenberg, JavaScript) y evaluación de UX/UI y accesibilidad.
 
 ### Idiomas
 - Español: nativo
-- Inglés: B2
+- Inglés: B1
 
 ### Intereses
 - Ingeniería de software frontend, visualización interactiva, diseño de interfaces, ciencia de datos aplicada.
