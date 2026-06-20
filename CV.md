@@ -1,12 +1,12 @@
 ## Miguel Chavez
 
-Estudiante de Preparatoria Royal · Desarrollador Frontend Junior
+Graduado de Preparatoria Royal e International American Institute · Desarrollador Frontend Junior
 
 - Email: miguel_chavezj@outlook.com  
 - GitHub: [SolarisSunh](https://github.com/SolarisSunh)
 
 ### Perfil
-Estudiante de preparatoria, próximo a egresar, con aspiración a estudiar una Ingeniería en Ciencias de Datos. Desarrollador web en formación: ya construyo páginas web con React, TypeScript y Tailwind, priorizando UI/UX y la creación de interfaces interactivas. He desarrollado un juego educativo con tablero 3D usando React Three Fiber y prototipos temáticos con componentes de interfaz modernos. Enfoque en aprendizaje continuo, colaboración y entrega de resultados claros.
+Graduado de preparatoria, con aspiración a estudiar una Ingeniería en Ciencias de Datos. Desarrollador web: construyo páginas web con React, TypeScript y Tailwind, priorizando UI/UX y la creación de interfaces interactivas. He desarrollado un juego educativo con tablero 3D usando React Three Fiber y prototipos temáticos con componentes de interfaz modernos. Enfoque en aprendizaje continuo, colaboración y entrega de resultados claros.
 
 ### Habilidades Técnicas
 - Frontend: React, TypeScript, JavaScript, Vite, Tailwind CSS, HTML, CSS, UI/UX
@@ -52,7 +52,7 @@ Estudiante de preparatoria, próximo a egresar, con aspiración a estudiar una I
     - Comprensión de patrones mínimos para exponer servicios HTTP
 
 ### Proyectos IAI (International American Institute)
-Actividades desarrolladas como parte de la Dual Certification del IAI.
+Actividades desarrolladas como parte de la Dual Certification del IAI (certificación obtenida).
 
 - WordPress Web — The Golden Crumb (IAI)  
   Tienda ficticia de galletas creada en WordPress.com con bloques de Gutenberg: menú de inicio, página About, formulario de contacto y navegación del sitio.  
@@ -71,14 +71,14 @@ Actividades desarrolladas como parte de la Dual Certification del IAI.
   - Código: [Repositorio (previews/iai-secondproject)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/iai-secondproject)
 
 ### Educación
-- Preparatoria Royal — Estudiante (en curso)  
+- Preparatoria Royal — Graduado (Certificación de Terminación de Estudios)  
   Objetivo académico: estudiar una Ingeniería en Ciencias de Datos.
-- Dual Certification — IAI (International American Institute) (en curso)  
+- Dual Certification — IAI (International American Institute) (Certificación de Estudios obtenida)  
   Programa de certificación dual con enfoque en desarrollo web (WordPress/Gutenberg, JavaScript) y evaluación de UX/UI y accesibilidad.
 
 ### Idiomas
 - Español: nativo
-- Inglés: B1
+- Inglés: Intermedio
 
 ### Intereses
 - Ingeniería de software frontend, visualización interactiva, diseño de interfaces, ciencia de datos aplicada.

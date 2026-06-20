@@ -6,7 +6,7 @@ export const skills = [
   "Three.js / React Three Fiber",
   "UI/UX",
   ".NET (conceptos)",
-  "Inglés (B1)",
+  "Inglés (Intermedio)",
 ];
 
 

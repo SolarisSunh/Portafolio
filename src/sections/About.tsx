@@ -14,7 +14,7 @@ export const About: React.FC = () => {
             <p>
               Soy estudiante de la Preparatoria Royal y del IAI (International American Institute), próximo a egresar, con el objetivo de formar una carrera universitaria cursando una Ingeniería en Ciencias de Datos.
               Ya desarrollo páginas web con React, TypeScript y Tailwind, con enfoque en UI/UX y aprendizaje continuo.
-              Mis proyectos son principalmente escolares y personales (incluyendo 3D con React Three Fiber y SPAs). Disfruto colaborar y mejorar mis habilidades. Nivel de inglés: B1.
+              Mis proyectos son principalmente escolares y personales (incluyendo 3D con React Three Fiber y SPAs). Disfruto colaborar y mejorar mis habilidades. Nivel de inglés: Intermedio.
             </p>
           </CardContent>
         </Card>
