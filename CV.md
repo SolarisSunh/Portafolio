@@ -17,6 +17,16 @@ Graduado de preparatoria, con aspiración a estudiar una Ingeniería en Ciencias
 
 ### Proyectos Destacados
 
+- Kronos PC — Tienda Futurista (Proyecto Escolar)  
+  Proyecto escolar consistente en el desarrollo de una página web para Kronos PC, una empresa inventada dedicada a la venta de componentes, PCs armadas y servicio técnico especializado.  
+  - Tecnologías: React, TypeScript, Vite, Tailwind, React Router, i18n  
+  - Aportes:
+    - Catálogo de componentes filtrable por categoría y PCs armadas por tipo de uso (gaming, creación, oficina)
+    - Soporte multi-idioma (Español, Inglés y Francés) con persistencia de preferencia
+    - Conversión de moneda en tiempo real (MXN/USD/EUR) con tasas de respaldo
+    - Diseño futurista con enfoque en UI/UX, accesibilidad y formulario de cotización por correo
+  - Código: [Repositorio (previews/kronos-pc)](https://github.com/SolarisSunh/Portafolio/tree/main/previews/kronos-pc)
+
 - Monopoly de Derivadas (React + 3D)  
   Juego educativo tipo Monopoly para practicar derivadas con tablero 3D, animaciones, renderizado matemático y multijugador local.  
   - Tecnologías: React, Vite, Tailwind, React Three Fiber, KaTeX  
@@ -81,6 +91,6 @@ Actividades desarrolladas como parte de la Dual Certification del IAI (certifica
 - Inglés: Intermedio
 
 ### Intereses
-- Ingeniería de software frontend, visualización interactiva, diseño de interfaces, ciencia de datos aplicada.
+- Ingeniería de software frontend y backend, visualización interactiva, diseño de interfaces, ciencia de datos aplicada.
 
 

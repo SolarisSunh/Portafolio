@@ -9,6 +9,16 @@ export type Project = {
 // Reemplaza con tus enlaces reales (GitHub/Demos)
 export const projects: Project[] = [
   {
+    slug: "kronos-pc",
+    title: "Kronos PC — Tienda Futurista (Proyecto Escolar)",
+    description:
+      "Proyecto escolar: sitio web para Kronos PC, una empresa inventada de venta de componentes, PCs armadas y servicio técnico. Catálogo filtrable, PCs por tipo de uso, multi-idioma (ES/EN/FR) y conversión de moneda en tiempo real.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind", "React Router", "i18n"],
+    links: [
+      { label: "Código", href: "https://github.com/SolarisSunh/Portafolio/tree/main/previews/kronos-pc" },
+    ],
+  },
+  {
     slug: "monopoly-derivadas",
     title: "Monopoly de Derivadas (React + 3D)",
     description:
