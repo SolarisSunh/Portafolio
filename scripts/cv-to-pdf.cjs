@@ -1,7 +1,7 @@
 /*
- * Genera public/CV.pdf a partir de CV.md.
- * 1) Convierte el markdown a HTML con `marked` y lo envuelve en una plantilla con estilos.
- * 2) Usa Microsoft Edge en modo headless para imprimir el HTML a PDF.
+ * Generates public/CV.pdf and public/CV_EN.pdf from their markdown sources.
+ * 1) Converts markdown to HTML with `marked` and wraps it in a styled template.
+ * 2) Uses Microsoft Edge in headless mode to print the HTML files to PDF.
  */
 const fs = require("fs");
 const path = require("path");
@@ -9,15 +9,17 @@ const { execFileSync } = require("child_process");
 const { marked } = require("marked");
 
 const root = path.resolve(__dirname, "..");
-const mdPath = path.join(root, "CV.md");
-const htmlPath = path.join(root, "scripts", "cv-temp.html");
-const pdfPath = path.join(root, "public", "CV.pdf");
+const outputs = [
+  { markdown: "CV.md", pdf: "CV.pdf", html: "cv-temp-es.html", lang: "es" },
+  { markdown: "CV_EN.md", pdf: "CV_EN.pdf", html: "cv-temp-en.html", lang: "en" },
+];
 
-const md = fs.readFileSync(mdPath, "utf8");
-const body = marked.parse(md);
+const renderHtml = (markdownPath, lang) => {
+  const md = fs.readFileSync(markdownPath, "utf8");
+  const body = marked.parse(md);
 
-const html = `<!doctype html>
-<html lang="es">
+  return `<!doctype html>
+<html lang="${lang}">
 <head>
 <meta charset="utf-8" />
 <style>
@@ -45,25 +47,33 @@ const html = `<!doctype html>
 ${body}
 </body>
 </html>`;
-
-fs.writeFileSync(htmlPath, html, "utf8");
+};
 
 const edgeCandidates = [
   "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
   "C:/Program Files/Microsoft/Edge/Application/msedge.exe",
 ];
-const edge = edgeCandidates.find((p) => fs.existsSync(p));
+const edge = edgeCandidates.find((candidate) => fs.existsSync(candidate));
 if (!edge) {
-  throw new Error("No se encontró msedge.exe");
+  throw new Error("msedge.exe was not found");
 }
 
-execFileSync(edge, [
-  "--headless",
-  "--disable-gpu",
-  "--no-pdf-header-footer",
-  `--print-to-pdf=${pdfPath}`,
-  `file:///${htmlPath.replace(/\\/g, "/")}`,
-], { stdio: "inherit" });
+for (const output of outputs) {
+  const mdPath = path.join(root, output.markdown);
+  const htmlPath = path.join(root, "scripts", output.html);
+  const pdfPath = path.join(root, "public", output.pdf);
+  const html = renderHtml(mdPath, output.lang);
 
-fs.unlinkSync(htmlPath);
-console.log("PDF generado en", pdfPath);
+  fs.writeFileSync(htmlPath, html, "utf8");
+
+  execFileSync(edge, [
+    "--headless",
+    "--disable-gpu",
+    "--no-pdf-header-footer",
+    `--print-to-pdf=${pdfPath}`,
+    `file:///${htmlPath.replace(/\\/g, "/")}`,
+  ], { stdio: "inherit" });
+
+  fs.unlinkSync(htmlPath);
+  console.log("PDF generated at", pdfPath);
+}
